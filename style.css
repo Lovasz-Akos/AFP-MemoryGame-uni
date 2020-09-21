@@ -1,0 +1,23 @@
+body
+{
+  overflow: hidden;
+  text-align: center;
+	background-color: #272121;
+  margin-top: 5%;
+  margin-bottom: 5%;
+	margin-left: 30%;
+}
+.wrapper {
+
+  display: grid;
+  grid-template-columns: 175px 175px 175px 175px;
+  grid-gap: 25px;
+}
+
+.box {
+  background-color: #443737;
+  border-radius: 10px;
+  padding: 75px;
+  font-size: 150%;
+  color: #ccbaba;
+}
