@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/memory.ico" />
 	<title>AFP1</title>
 </head>
 
@@ -15,7 +16,7 @@
 
 <body>
 	<div class="wrapper">
-	  <div class="box 1">1</div>
+	  <a href="#"><div class="box 1">1</div></a>
 	  <div onclick="flip()" class="box 2">2</div>
 	  <div class="box 3">3</div>
 	  <div class="box 4">4</div>
