@@ -10,11 +10,19 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
 
     if (flippedCounter == 1) {
         firstTileID = newTileID; //if this is the first tile clicked, store it as the one to compare to
+        console.log("first click");
+        console.log("first:" + firstTileID);
+        console.log("current:" + newTileID);
     }
 
     if (flippedCounter == 2) {
         //#TODO add checker logic. This needs the pictures and the randomiser to be done. 
-
+        console.log("second click");
         flippedCounter = 0;
+        if (newTileID == firstTileID) {
+            console.log("im retarded");
+        }
+        console.log("first:" + firstTileID);
+        console.log("current:" + newTileID);
     }
 }
