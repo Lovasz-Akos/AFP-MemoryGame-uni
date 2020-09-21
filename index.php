@@ -5,10 +5,18 @@
 	<link rel="stylesheet" href="style.css">
 	<title>AFP1</title>
 </head>
+
+<?php 
+	echo "hi";
+	function flip() {
+		log("clicked box2");
+	 }
+?>
+
 <body>
 	<div class="wrapper">
 	  <div class="box 1">1</div>
-	  <div class="box 2">2</div>
+	  <div onclick="flip()" class="box 2">2</div>
 	  <div class="box 3">3</div>
 	  <div class="box 4">4</div>
 	  <div class="box 5">5</div>
@@ -26,3 +34,4 @@
 	</div>
 </body>
 </html>
+
