@@ -32,4 +32,6 @@ body
   padding: 75px;
   font-size: 150%;
   color: #ccbaba;
+  font-family: 'Comfortaa', cursive;
+  background-image: url("images/viking.png");
 }
