@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="script.js"></script> 
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/memory.ico" />
@@ -60,9 +61,3 @@
 	</div>
 </body>
 </html>
-
-<script>
-function flip() {
-	
-}
-</script>
