@@ -9,8 +9,9 @@
 
 <body>
 	<div class="wrapper">
-	  <a href="#"><div class="box 1">1</div></a>
-	  <div class="box 2" id=b2 onclick="flip()">2</div>
+	  <a href="#">
+	<div class="box 1" id=b1  onclick="flip('b1')">1</div></a>
+	  <div class="box 2" id=b2 onclick="flip('b2')">2</div>
 	  <div class="box 3" id=b3 onclick="flip()">3</div>
 	  <div class="box 4" id=b4 onclick="flip()">4</div>
 	  <div class="box 5" id=b5 onclick="flip()">5</div>
@@ -31,6 +32,6 @@
 
 <script>
 function flip() {
-	document.getElementById('b2').innerHTML = "xd";
+	
 }
 </script>
