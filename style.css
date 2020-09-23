@@ -1,10 +1,32 @@
-body
-{
+body {
   overflow: hidden;
   text-align: center;
 	background-color: #272121;
-  margin-top: 3%;
+  margin-top: 2%;
   margin-bottom: 3%;
+}
+button {
+  width: 200px;
+  outline: 0;
+  border: 2px solid #443737;
+  font-size: 120%;
+  -webkit-appearance: none;
+  background: none;
+  text-align: center;
+  background-color: transparent;
+  /*background-color: #443737;*/
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 1%;
+  color: #ccbaba;
+  font-family: 'Comfortaa', cursive;
+  transition:  0.5s ease;
+}
+button:hover {
+  transition:  0.5s ease; 
+  background-color: #443737;
+  box-shadow:  0 0px 10px #ccbaba;
+  text-shadow:  0 0px 5px #ccbaba;
 }
 .wrapper {
   justify-content: center;
@@ -22,7 +44,6 @@ body
 .wrapper a:hover{
   transition:  0.5s ease; 
   box-shadow:  0 0px 15px #ccbaba;
-  text-shadow:  0 0px 5px #ccbaba;
   color: white;
 }
 .box {
@@ -33,4 +54,11 @@ body
   font-size: 150%;
   color: #ccbaba;
   font-family: 'Comfortaa', cursive;
+  transition: 0.5s ease;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0, .6);
+}
+.box:hover {
+  transition: 0.5s ease;
+  background-color: #463939;
+  box-shadow: inset 0px 0px 10px rgba(255,255,255, .3);
 }
