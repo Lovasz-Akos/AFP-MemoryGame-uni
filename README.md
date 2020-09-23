@@ -12,5 +12,7 @@ If they do, both tiles are removed from the screen. If they don't, the pictures 
 
 If the player finds all the pairs, the game is over.
 
+Clicking the "new game" button resets the game
 
-As this is a web application, it's made up of html, css, javascript and php
+
+As this is a web application, it's made up of html, css and javascript
