@@ -35,17 +35,6 @@ button:hover {
   grid-template-columns: 175px 175px 175px 175px;
   grid-gap: 25px;
 }
-/*.wrapper a{
-  transition:  0.5s ease; 
-  text-decoration: none;
-    border-radius: 10px;
-
-}*/
-/*.wrapper a:hover{
-  transition:  0.5s ease; 
-  box-shadow:  0 0px 15px #ccbaba;
-  color: white;
-}*/
 .box {
   height: 175px;
   text-align: center;
