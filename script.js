@@ -69,6 +69,6 @@ function newGame() {
 
 function hideTile(tileID) {
     var element = document.getElementById(tileID);
-    var hiddenPlaceholder = wrapper.innerHTML += "<a href=#><div class=hiddenBox id=b" + i + ">" + i + "</div></a>"
-    element.parentNode.replaceChild(hiddenPlaceholder);
+    var hiddenPlaceholder = document.createElement("<div class=hiddenBox id=h" + tileID + "></div>");
+    element.parentNode.replaceChild(hiddenPlaceholder, element);
 }
