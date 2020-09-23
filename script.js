@@ -5,6 +5,7 @@ var firstTileID = "";
 var pictures = [""]; //contains the list of assignable pictures 
 
 function flip(tileID) { //onclick of tiles calls this function, with it's own id (for example: b4), that's stored in tileID
+    showimg();
     flippedCounter++;
     newTileID = tileID; //got tileID gets stored in newTileID. This is needed to check it against the previous tile.
 
@@ -25,4 +26,10 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
         console.log("first:" + firstTileID);
         console.log("current:" + newTileID);
     }
+}
+function showimg() {
+    document.getElementById("b1").style.backgroundImage = "url('images/fish.png')";
+}
+function hideimg() {
+    document.getElementById("b1").style.backgroundColor = "#443737";
 }
