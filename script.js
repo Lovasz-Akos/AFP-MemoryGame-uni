@@ -53,3 +53,12 @@ function checkStatus(tileID, counter) {
         hideImg(tileID);
     }
 }
+
+function newGame() {
+    //TODO randomly assign pictures to tiles
+    hideAllImgs();
+}
+
+function hideTile(tileID)[
+
+]
