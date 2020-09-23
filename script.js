@@ -23,7 +23,7 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
         //TODO add checker logic. This needs the pictures and the randomiser to be done. 
         console.log("second click");
         checkStatus(tileID, flippedCounter);
-        setTimeout(hideAllImgs, 1000);
+        setTimeout(hideAllImgs, 500);
         console.log("first:" + firstTileID);
         console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
     }
@@ -40,8 +40,12 @@ function hideImg(tileID) {
 
 function hideAllImgs() {
     for (var i = 0; i < 16; i++) {
-        document.getElementById('b' + i).style.backgroundColor = "#443737";
-        document.getElementById('b' + i).style.backgroundImage = "";
+        try {
+            document.getElementById('b' + i).style.backgroundColor = "#443737";
+            document.getElementById('b' + i).style.backgroundImage = "";
+        } catch (e) {
+            continue;
+        }
     }
     flippedCounter = 0;
 }
@@ -57,8 +61,14 @@ function checkStatus(tileID, counter) {
 function newGame() {
     //TODO randomly assign pictures to tiles
     hideAllImgs();
+    hideTile('b0');
+    hideTile('b1');
+    hideTile('b2');
+    hideTile('b3');
 }
 
-function hideTile(tileID)[
-
-]
+function hideTile(tileID) {
+    var element = document.getElementById(tileID);
+    var hiddenPlaceholder = wrapper.innerHTML += "<a href=#><div class=hiddenBox id=b" + i + ">" + i + "</div></a>"
+    element.parentNode.replaceChild(hiddenPlaceholder);
+}
