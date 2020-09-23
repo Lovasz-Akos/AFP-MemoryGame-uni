@@ -29,8 +29,8 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
     }
 }
 
-function showImg(tileID) {
-    document.getElementById(tileID).style.backgroundImage = "url('images/fish.png')";
+function showimg(tileID) {
+    document.getElementById(tileID).setAttribute("style",  "background-image:url('images/fish.png');");
 }
 
 function hideImg(tileID) {
