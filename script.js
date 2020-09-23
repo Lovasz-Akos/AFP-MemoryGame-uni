@@ -10,7 +10,7 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
     newTileID = tileID; //got tileID gets stored in newTileID. This is needed to check it against the previous tile.
 
     if (flippedCounter == 1) {
-        showimg(tileID);
+        showImg(tileID);
         firstTileID = newTileID; //if this is the first tile clicked, store it as the one to compare to
 
         console.log("first click");
@@ -19,30 +19,37 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
     }
 
     if (flippedCounter == 2) {
-        showimg(tileID);
+        showImg(tileID);
         //TODO add checker logic. This needs the pictures and the randomiser to be done. 
         console.log("second click");
-        flippedCounter = 0;
-
-        checkStatus(tileID);
+        checkStatus(tileID, flippedCounter);
+        setTimeout(hideAllImgs, 1000);
         console.log("first:" + firstTileID);
         console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
     }
 }
 
-function showimg(tileID) {
+function showImg(tileID) {
     document.getElementById(tileID).style.backgroundImage = "url('images/fish.png')";
 }
 
-function hideimg(tileID) {
+function hideImg(tileID) {
     document.getElementById(tileID).style.backgroundColor = "#443737";
     document.getElementById(tileID).style.backgroundImage = "";
 }
 
-function checkStatus(tileID) {
+function hideAllImgs() {
+    for (var i = 0; i < 16; i++) {
+        document.getElementById('b' + i).style.backgroundColor = "#443737";
+        document.getElementById('b' + i).style.backgroundImage = "";
+    }
+    flippedCounter = 0;
+}
+
+
+function checkStatus(tileID, counter) {
     if (newTileID == firstTileID) { //if the first and second click ids match, seemingly nothing happens, but I do a log just to be sure
         console.log("clicked the same tile twice. this...does nothing.");
-        flippedCounter = 0; //! this should work but it needs some testing 
-        hideimg(tileID);
+        hideImg(tileID);
     }
 }
