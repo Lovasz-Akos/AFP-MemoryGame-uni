@@ -6,11 +6,12 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/memory.ico" />
 	<title>AFP1</title>
+
 </head>
 
 <body>
-	<div class="wrapper">
-	<a href="#">
+	<div class="wrapper" id="wrapper">
+<!-- 	<a href="#">
 		<div class="box" id=b1  onclick="flip('b1')">1</div>
 	</a>
 	<a href="#">
@@ -57,7 +58,13 @@
 	</a>
 	<a href="#">
 		<div class="box" id=b16 onclick="flip('b16')">16</div>
-	</a>
+	</a> -->
 	</div>
+	<script type="text/javascript">
+		var i;
+		for (var i = 1; i < 17; i++) {
+			wrapper.innerHTML += "<a href=#><div class=box id=b"+i+" onclick=flip('b"+i+"')>"+i+"</div></a>" 
+		}
+	</script>
 </body>
 </html>
