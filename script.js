@@ -48,7 +48,7 @@ function hideAllImgs() {
 
 
 function checkStatus(tileID, counter) {
-    if (newTileID == firstTileID) { //if the first and second click ids match, seemingly nothing happens, but I do a log just to be sure
+    if (newTileID == firstTileID) {
         console.log("clicked the same tile twice. this...does nothing.");
         hideImg(tileID);
     }
