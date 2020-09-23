@@ -47,13 +47,11 @@ button:hover {
   color: white;
 }
 .box {
+  height: 175px;
   text-align: center;
   background-color: #443737;
   border-radius: 10px;
-  padding: 75px;
-  font-size: 150%;
   color: #ccbaba;
-  font-family: 'Comfortaa', cursive;
   transition: 0.5s ease;
   box-shadow: inset 0px 0px 10px rgba(0,0,0, .6);
 }
@@ -65,9 +63,7 @@ button:hover {
 .hiddenBox
 {
     border-radius: 10px;
-    padding: 75px;
-    font-size: 150%;
-    font-family: 'Comfortaa', cursive;
+    height: 175px;
     text-align: center;
     background-color: #443737;
     opacity: 0;
