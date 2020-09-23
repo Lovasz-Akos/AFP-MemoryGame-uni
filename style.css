@@ -62,3 +62,13 @@ button:hover {
   background-color: #463939;
   box-shadow: inset 0px 0px 10px rgba(255,255,255, .3);
 }
+.hiddenBox
+{
+    border-radius: 10px;
+    padding: 75px;
+    font-size: 150%;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    background-color: #443737;
+    opacity: 0;
+}
