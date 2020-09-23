@@ -39,3 +39,12 @@
 
 8. List of requirements (redundant to 4.??)
     a list of functions, the "module" they're a part of, the function's name, it's version and what it does.
+
+9. Reports
+    basically a QnA for each function that lists expected outcomes of specified actions IIRC
+
+10. Glossary
+    technical words that appear in the project that might need explanations such as:
+         "responsive interface means that the game screen will adapt to your screen's size and orientation" 
+
+         IIRC - If I Read it Correctly
