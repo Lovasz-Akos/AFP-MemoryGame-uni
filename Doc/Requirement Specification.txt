@@ -1,0 +1,50 @@
+1. Overview
+    
+    This is a memory game playable in any modern day browser.
+    Technologies used for the game and it's presentation are: HTML, CSS and JavaScript.
+
+   {
+        The game's interface consists of 6 by 6 tiles that have pictures assigned to them. 
+        Clicking a tile reveals it's assigned picture. Clicking a second tile reveals it's assigned picture aswell,
+        then checks if the pictures match up. If they do, the pair of tiles get removed, and the game can continue. If the tiles don't
+        have matching pictures, their pictures are hidden again, and the game can continue.
+        For the game to end, the player must find all the pairs, at which point no tiles remain.
+
+        The "New Game" button resets the game to it's starting state and shuffles the assigned pictures.
+   } --> should this block move to 4. or something?
+
+   The goal of this project is to provide a beautiful, easily accesibble, simple version of the classic memory game.
+   Playing memory games can improve the player's short-term memory, dexterity, reaction time, precision and strategy.
+   In many modern systems the developers focus on cramming in as much functionality as possible, often sacraficing performance,
+   simplicity or accesibility. Our simple memory game provides a stress-free enviorement to play a game with no timers,
+   no scores or leaderboards to minimize the potential of feeling rushed or judged.
+
+2. Current State 
+    here, write about why this game makes the world a better place...
+
+3. Dream system
+    this is some beyond our scope plan for the perfect product description IIRC
+
+4. Functional requirements
+    list all the functions and what they do
+
+5. System rules, patterns, recommendations.
+    I have no idea.
+
+6. Current business flow model.
+    description of how the current system functions that we're trying to expand/replace? (how is this relevant with a 2 week project that makes a memory game? this is not building on anything we're just trying to get done with our assignment)
+
+7. Required business flow
+    description of the flow of using the program IIRC
+
+8. List of requirements (redundant to 4.??)
+    a list of functions, the "module" they're a part of, the function's name, it's version and what it does.
+
+9. Reports
+    basically a QnA for each function that lists expected outcomes of specified actions IIRC
+
+10. Glossary
+    technical words that appear in the project that might need explanations such as:
+         "responsive interface means that the game screen will adapt to your screen's size and orientation" 
+
+         IIRC - If I Read it Correctly
