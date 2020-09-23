@@ -41,7 +41,7 @@ function hideImg(tileID) {
 function hideAllImgs() {
     for (var i = 0; i < 16; i++) {
         try {
-            document.getElementById('b' + i).style.backgroundColor = "#443737";
+            //document.getElementById('b' + i).style.backgroundColor = "#443737";
             document.getElementById('b' + i).style.backgroundImage = "";
         } catch (e) {
             continue;
@@ -69,6 +69,10 @@ function newGame() {
 
 function hideTile(tileID) {
     var element = document.getElementById(tileID);
-    var hiddenPlaceholder = document.createElement("<div class=hiddenBox id=h" + tileID + "></div>");
+    var hiddenPlaceholder = document.createElement("div");
+    hiddenPlaceholder.className = "hiddenBox";
+    //    hiddenPlaceholder.setAttribute("style", "")
+
+
     element.parentNode.replaceChild(hiddenPlaceholder, element);
 }
