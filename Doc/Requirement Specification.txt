@@ -40,7 +40,7 @@
     is over.there will also be a “new game”button ,Clicking the "new game" button resets the game,As this is a web application, it's made up of 
     html, css and javascript
 7. Required business flow
-    description of the flow of using the program IIRC
+    If we want to make this game bigger,we can just download more images,reshape them,it will be harder
 
 8. List of requirements
     Due to the simplicity of the app, it could be considered a single big module.
