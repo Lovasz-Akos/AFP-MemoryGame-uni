@@ -58,7 +58,4 @@
     basically a QnA for each function that lists expected outcomes of specified actions IIRC
 
 10. Glossary
-    technical words that appear in the project that might need explanations such as:
-         "responsive interface means that the game screen will adapt to your screen's size and orientation" 
-
-         IIRC - If I Read it Correctly
+    
