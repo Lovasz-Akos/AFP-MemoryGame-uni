@@ -30,7 +30,7 @@
 
 5. System rules, patterns, recommendations.
     For this project we are gonna be using HTML and CSS because it is a web based application
-    and also Javascriot to handle the project's mechanics,
+    and also JavaScript to handle the project's mechanics,
     like the dynamic tile generation when starting a new game.
 
 6. Current business flow model.
@@ -39,8 +39,20 @@
 7. Required business flow
     description of the flow of using the program IIRC
 
-8. List of requirements (redundant to 4.??)
-    a list of functions, the "module" they're a part of, the function's name, it's version and what it does.
+8. List of requirements
+    Due to the simplicity of the app, it could be considered a single big module.
+    This big module contains the game itself. It's functions are:
+    
+    To provide the game interface, including the clickable tiles and the design of the page.
+    This is done with a combination of JavaScript, HTML and CSS. CSS and HTML creates the basic structure of the
+    interface that the browser can interpret, while JavaScript is responsible for the dynamic generation of said tiles.
+
+    The tiles themselves are simple html elements that have a JavaScript function assigned to when they are clicked by the user.
+    This fucntion then internally handles the calls to animation, and all of the business logic associated with the memory game.
+
+    Finally, the "New Game" button simply serves as a quick way to reset the game to it's starting state, while also re-shuffling
+    the images associated with each tile as to make the game a bit more interesting and avoid the problem of certain users
+    knowing all the combinations ahead of time.
 
 9. Reports
     basically a QnA for each function that lists expected outcomes of specified actions IIRC
