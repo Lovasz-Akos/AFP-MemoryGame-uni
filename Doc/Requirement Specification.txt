@@ -23,7 +23,9 @@
     Flip - Handles tile flipping and matching logics, controls the amount of tiles that can be revealed at the same time
 
 5. System rules, patterns, recommendations.
-    For this project we are gonna be using HTML and CSS because it is a web based application and also Javascriot to handle the project's mechanics, like the dynamic tile generation when starting a new game
+    For this project we are gonna be using HTML and CSS because it is a web based application
+    and also Javascriot to handle the project's mechanics,
+    like the dynamic tile generation when starting a new game.
 
 6. Current business flow model.
     description of how the current system functions that we're trying to expand/replace? (how is this relevant with a 2 week project that makes a memory game? this is not building on anything we're just trying to get done with our assignment)
