@@ -22,9 +22,9 @@
     ShowImg and HideImg - The ShowImg function reveals the given tile's hidden background image once the tile is clicked, 
     the HideImg function changes the tile back to the original state
     
-    Check Status - This function checks if the same tile has been clicked twice
+    Check Status - This function checks if the same tile has been clicked twice and if it is, it flips back the tile.
     
-    Hide Tile - Hides both tiles upon matching
+    Hide Tile - Removes the tiles it recieves. This will be used when a match is found
     
     Flip - Handles tile flipping and matching logics, controls the amount of tiles that can be revealed at the same time
 
