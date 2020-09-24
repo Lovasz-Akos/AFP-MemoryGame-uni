@@ -34,11 +34,13 @@
     like the dynamic tile generation when starting a new game.
 
 6. Current business flow model.
-    We download 8 images from google, generate pictures as 4x4 plot,Goal of the game is to find all of the pairs.there will be 4x4 tile covering
-    all the4x4 plot,Clicking a tile while having one revealed, will reveal the second one and check if they match up .If they do, both tiles are
-    removed from the screen. If they don't, the pictures get hidden again and the next round starts.If the player finds all the pairs, the game 
-    is over.there will also be a “new game”button ,Clicking the "new game" button resets the game,As this is a web application, it's made up of 
-    html, css and javascript
+    We have 8 images that are assigned to 2 tiles each on a 4x4 grid. 
+    Goal of the game is to find all of the pairs. 
+    Clicking a tile while having one revealed, will reveal the second one and check if they match up.
+    If they do, both tiles are removed from the screen. If they don't, the pictures are hidden again, and the next round starts.
+    If the player finds all the pairs, the game is over.
+    Clicking the "new game" button resets the game.
+
 7. Required business flow
     If we want to make this game bigger,we can just download more images,reshape them,it will be harder
 
