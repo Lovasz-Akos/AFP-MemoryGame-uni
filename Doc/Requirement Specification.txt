@@ -60,7 +60,13 @@
     knowing all the combinations ahead of time.
 
 9. Reports
-    basically a QnA for each function that lists expected outcomes of specified actions IIRC
+    Upon clicking the New Game button, the app generates 16 new tiles with randomized pictures on the back.
+    
+    If two tiles are selected that don't match, the tiles are flipped back over and the user is able to select new tiles.
+    
+    Once the user finds a matching pair, the tiles vanish from the board.
+    
+    If the same tile is selected twice, the tile flips on the first click, but stays the same on the second click.
 
 10. Glossary
     
