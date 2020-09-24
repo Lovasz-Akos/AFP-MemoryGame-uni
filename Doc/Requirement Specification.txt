@@ -16,10 +16,16 @@
     this is some beyond our scope plan for the perfect product description IIRC
 
 4. Functional requirements
-    New Game - The New Game function generates 16 tiles with unique IDs and hidden background images upon pressing the New Game button on top of the screen
-    ShowImg and HideImg - The ShowImg function reveals the given tile's hidden background image once the tile is clicked, the HideImg function changes the tile back to the original state
+    New Game - The New Game function generates 16 tiles with unique IDs and hidden background images. 
+    Upon pressing the New Game button on top of the screen
+    
+    ShowImg and HideImg - The ShowImg function reveals the given tile's hidden background image once the tile is clicked, 
+    the HideImg function changes the tile back to the original state
+    
     Check Status - This function checks if the same tile has been clicked twice
+    
     Hide Tile - Hides both tiles upon matching
+    
     Flip - Handles tile flipping and matching logics, controls the amount of tiles that can be revealed at the same time
 
 5. System rules, patterns, recommendations.
