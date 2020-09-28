@@ -20,7 +20,11 @@ describe the platfor the program was made for and what was used to create it
 describes the layers of the program such as what the backend and the frontend does 
 
 8. Implementation plan
-desctibes what technologies were used, and why.
+For this web based project we used HTML to build the application's basic structure
+then used CSS elements and classes to give it a simple and clean design anyone can
+easily understand. Javascript was used to handle the game's mechanics, such as the
+tile matching logic, flipping and hiding tiles via changing certain elements' css
+classes and starting a new game by the click of a button.
 
 9. Testing plan
 describes the plan for testing the program
