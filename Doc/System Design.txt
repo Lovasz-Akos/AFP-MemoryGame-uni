@@ -17,14 +17,32 @@ describes user roles and their duties
 describe the platfor the program was made for and what was used to create it
 
 7. Architectural plan
-describes the layers of the program such as what the backend and the frontend does 
+describes the layers of the program such as what the backend and the frontend does
+The application's design was created via HTML and CSS. The HTML contains a wrapper
+class that organizes all the tiles into a grid 4x4 grid layout. Tiles are using a
+box named class and also a hover selector for that class which gives the tile its
+design and simplicity. The 16 tiles are generated via Javascript, by using a for
+loop, which makes it dynamic and able to give each tile its own unique ID.
+The tiles' IDs are used to identify each tile in Javascript functions so it knows
+which tile it's working with. Upon clicking a tile its onclick event calls the flip
+function which increases the flipped tile counter by 1 and calls the showImg function
+to reveal the hidden image on the selected tile's back by changing the background.
+IF the same tile is selected twice nothing happens and that is because of the
+checkStatus function. However if the second selection is not the same as the first
+one the flipped tile counter increased by 1 again so no more tiles can be selected.
+If the second tile matches the first selected one then hideTile function switches
+both tiles' CSS classes to a class named hiddenBox which is supposed to hide boxes
+from the user. If two tiles do not match they are reverted back by the hideImg
+function to their default state which is the tile's front side with no images
+displayed. The New Game button's onclick event calls the newGame function which sets
+all tiles' backgrounds to empty and generates 16 new tiles with new images on the back. 
 
 8. Implementation plan
 For this web based project we used HTML to build the application's basic structure
 then used CSS elements and classes to give it a simple and clean design anyone can
 easily understand. Javascript was used to handle the game's mechanics, such as the
-tile matching logic, flipping and hiding tiles via changing certain elements' css
-classes and starting a new game by the click of a button.
+tile matching logic, tile flipping counter, flipping and hiding tiles via changing
+certain elements' css classes and starting a new game by the click of a button.
 
 9. Testing plan
 describes the plan for testing the program
