@@ -9,13 +9,11 @@
    simplicity or accesibility. Our simple memory game provides a stress-free enviorement to play a game with no timers,
    no scores or leaderboards to minimize the potential of feeling rushed or judged.
 
-2. Current State 
-    here, write about why this game makes the world a better place...
+2. Current State
     current state we have a plan of a memory game , for now we have everthing to make a game and its functions.
     This memory game is different from other normal games, this game is example in  which  u can not get frustrated, 
 
 3. Dream system
-    this is some beyond our scope plan for the perfect product description IIRC
     this game will be availbale on on our website , u can download it for free , this game is a memory game that u can play in any modern browswer ,
     this game is made of webapplications JavaScript,HTMl and CSS,
     inside this game there are pictures and u have to find pairs of pictures by clicking the tiles.
