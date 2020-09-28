@@ -1,0 +1,26 @@
+1. Overview
+describes the whole project
+
+2. Current situation
+describes why the program is needed, or why it has been created
+
+3. List of requirements
+lists the program's functions (in more detail than in req.spec.)
+
+4. Current business flow model
+same as in req.spec. but from our perspective
+
+5. Required business flow
+same as in req.spec. but from our perspective
+
+6.Use cases
+lists what privleges are needed for certain functions
+
+7. Screen plans
+pictures of how we imagin the interface will look like
+
+8. Script
+describes the flow of the typical usage of the program
+
+9. Glossary
+same as in req.spec.
