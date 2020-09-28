@@ -17,7 +17,6 @@ describes user roles and their duties
 describe the platfor the program was made for and what was used to create it
 
 7. Architectural plan
-describes the layers of the program such as what the backend and the frontend does
 The application's design was created via HTML and CSS. The HTML contains a wrapper
 class that organizes all the tiles into a grid 4x4 grid layout. Tiles are using a
 box named class and also a hover selector for that class which gives the tile its
