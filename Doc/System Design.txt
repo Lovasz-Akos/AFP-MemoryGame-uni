@@ -1,0 +1,32 @@
+1. Goal of the system
+describes what the porgram aims to achieve
+
+2. Project plan
+lists contributors and their roles as well as the schedule and milestones
+
+3. Business process model
+desciption or diagram of the software's usage
+
+4. Requirements
+lists the program's goals that have to be met
+
+5. Functional plan
+describes user roles and their duties
+
+6. Physical enviorement
+describe the platfor the program was made for and what was used to create it
+
+7. Architectural plan
+describes the layers of the program such as what the backend and the frontend does 
+
+8. Implementation plan
+desctibes what technologies were used, and why.
+
+9. Testing plan
+describes the plan for testing the program
+
+10. Install plan
+describes the installation of the program
+
+11. Maintenance plan
+describes the requirements for the program's upkepp such as troubleshooting, further updates or expansions
