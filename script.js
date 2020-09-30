@@ -30,7 +30,8 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
 }
 
 function showImg(tileID) {
-    document.getElementById(tileID).setAttribute("style", "background-image:url('images/fish.png');");
+    document.getElementById(tileID).setAttribute("style", "transform: rotate3d(0, 1, 0, -180deg); background-image:url('images/fish.png');");
+    // document.getElementById(tileID).setAttribute("style", "background-image:url('images/fish.png');");
 }
 
 function hideImg(tileID) {
@@ -41,7 +42,9 @@ function hideImg(tileID) {
 function hideAllImgs() {
     for (var i = 0; i < 16; i++) {
         try {
-            //document.getElementById('b' + i).style.backgroundColor = "#443737";
+            document.getElementById('b' + i).style.backgroundColor = "#443737";
+            // document.getElementById('b' + i).setAttribute("style", "background-image:url(''); rotate3d(0, 1, 0, 180deg");
+            document.getElementById('b' + i).setAttribute("style", "transform: rotate3d(0, 1, 0, 180deg;)");
             document.getElementById('b' + i).style.backgroundImage = "";
         } catch (e) {
             continue;
