@@ -13,10 +13,12 @@
     current state we have a plan of a memory game , for now we have everthing to make a game and its functions.
     This memory game is different from other normal games, this game is example in  which  u can not get frustrated, 
 
+
 3. Dream system
     this game will be availbale on on our website , u can download it for free , this game is a memory game that u can play in any modern browswer ,
     this game is made of webapplications JavaScript,HTMl and CSS,
     inside this game there are pictures and u have to find pairs of pictures by clicking the tiles.
+
 
 4. Functional requirements
     New Game - The New Game function generates 16 tiles with unique IDs and hidden background images. 
