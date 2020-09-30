@@ -16,3 +16,5 @@ Clicking the "new game" button resets the game
 
 
 As this is a web application, it's made up of html, css and javascript
+
+test
