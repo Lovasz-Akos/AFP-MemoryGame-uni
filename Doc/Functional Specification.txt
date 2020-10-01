@@ -1,5 +1,13 @@
 1. Overview
 describes the whole project
+we have a project in which we have made a memory Game, 
+Game is consist of A 4 by 4 grid of squares that have pictures assigned, 
+Goal of the game is to find all pairs in the game,
+when we click a tile it reveals its assigned picture , after clicking two tiles program checks if both pictures
+are same then both pictures will be removed else it remains hidden , and we continue untill we find pair of same pictures,
+when we find all pairs then game is over , and we start again a new game with same process.
+our game is a web application so its made of JsvsScript,HTML and CSS.
+
 
 2. Current situation
 describes why the program is needed, or why it has been created
@@ -9,6 +17,7 @@ lists the program's functions (in more detail than in req.spec.)
 
 4. Current business flow model
 same as in req.spec. but from our perspective
+
 
 5. Required business flow
 same as in req.spec. but from our perspective
