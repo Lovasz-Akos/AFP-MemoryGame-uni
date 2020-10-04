@@ -54,5 +54,5 @@ Initializing databases and other software with site-specific data and Conversion
 Dry run of procedures in user manuals
 
 11. Maintenance plan
-Our team will spy the process of this program,as long as trouble appear,we will solve it as soon as possible
-And because it is a simple game ,we do not need to update it
+the goal of this is to make sure that this program work properly ,as lone as any problem occure,the 
+program will send a message about this problem,then we can solve it

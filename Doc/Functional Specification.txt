@@ -27,7 +27,7 @@ so the Goal is find all the pairs and finish the game ,
 for start new game there is a button 'new game ' by clicking new game it will reset the pictures and start again .
 
 5. Required business flow
-If we want to make this game bigger,we can just download more images,reshape them,it will be harder.
+this game is used to test and practice player's brain,there is no any limitation
 
 6.Use cases
 firstly Who is going to  use the website ?
