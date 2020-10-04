@@ -10,7 +10,7 @@ our game is a web application so its made of JsvsScript,HTML and CSS.
 
 
 2. Current situation
-describes why the program is needed, or why it has been created
+This game is very smart and useful,it can not only practice our brain,but also test our brain
 
 3. List of requirements
 New Game - The New Game function generates 16 tiles with unique IDs and hidden background images.Upon pressing the New Game button on top of the screen
