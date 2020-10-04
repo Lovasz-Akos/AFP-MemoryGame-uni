@@ -50,4 +50,5 @@ describes the plan for testing the program
 We make the installation as a package installation,so any user do not need to worry about the installation
 
 11. Maintenance plan
-describes the requirements for the program's upkepp such as troubleshooting, further updates or expansions
+Our team will spy the process of this program,as long as trouble appear,we will solve it as soon as possible
+And because it is a simple game ,we do not need to update it
