@@ -13,7 +13,11 @@ our game is a web application so its made of JsvsScript,HTML and CSS.
 describes why the program is needed, or why it has been created
 
 3. List of requirements
-lists the program's functions (in more detail than in req.spec.)
+New Game - The New Game function generates 16 tiles with unique IDs and hidden background images.Upon pressing the New Game button on top of the screen
+ShowImg and HideImg - The ShowImg function reveals the given tile's hidden background image once the tile is clicked,the HideImg function changes the tile back to the original state,when the two tiles do not match up
+Check Status - This function checks if the same tile has been clicked twice and if it is, it flips back the tile.
+Hide Tile - Removes the tiles it recieves. This will be used when a match is found
+Flip - Handles tile flipping and matching logics, controls the amount of tiles that can be revealed at the same time,which means two
 
 4. Current business flow model
 same as in req.spec. but from our perspective
