@@ -44,7 +44,8 @@ after finding all the pairs if user wants another game then there is a button 'n
 
 
 7. Screen plans
-pictures of how we imagin the interface will look like
+pictures of how we imagin the interface will look like,
+we have already made a first look of game here is the link of game ,  file:///C:/Users/Parkash%20Ladhani/Desktop/project1/AFP-1-2020-Team1/index.html
 
 
 
