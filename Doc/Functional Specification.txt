@@ -29,7 +29,12 @@ lists what privleges are needed for certain functions
 pictures of how we imagin the interface will look like
 
 8. Script
-describes the flow of the typical usage of the program
+player click “start” ,there will be squares the have pictures
+Click a tile reveals the picture,
+Click a tile while having one revealed,will reveal the second one and check if they match up
+If they do, both tiles are removed from the screen. If they don't, the pictures get hidden again and the next round starts.
+If the player finds all the pairs, the game is over.
+Clicking the "new game" button resets the game
 
 9. Glossary
 HTML: Hypertext Markup Language, the foundation of any website
