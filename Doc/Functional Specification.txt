@@ -22,9 +22,6 @@ Flip - Handles tile flipping and matching logics, controls the amount of tiles t
 4. Current business flow model
 same as in req.spec. but from our perspective
 
-sfd
-
-
 5. Required business flow
 If we want to make this game bigger,we can just download more images,reshape them,it will be harder.
 
