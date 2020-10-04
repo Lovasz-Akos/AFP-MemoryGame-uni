@@ -20,21 +20,27 @@ Hide Tile - Removes the tiles it recieves. This will be used when a match is fou
 Flip - Handles tile flipping and matching logics, controls the amount of tiles that can be revealed at the same time,which means two
 
 4. Current business flow model
-<<<<<<< HEAD
 we made a memory game in which we have pictures in gird view and pictures are hidden in tiles  and we have to click one by one tile
 every tile has assigned pictures so clicking tile it reveals its assigned picture then program will match the pictures that we clicked 
 if they matched then they will be removed , 
 so the Goal is find all the pairs and finish the game , 
-for star new game there is a button 'new game ' by clicking new game it will reset the pictures and start again .
-=======
-same as in req.spec. but from our perspective
+for start new game there is a button 'new game ' by clicking new game it will reset the pictures and start again .
 
->>>>>>> 271de4c64690d03d4f7cbab670800490d68c4a4f
 5. Required business flow
 If we want to make this game bigger,we can just download more images,reshape them,it will be harder.
 
 6.Use cases
-lists what privleges are needed for certain functions
+firstly Who is going to  use the website ?
+as this is a memory game so everyone  can use it . 
+
+What the user want to do?
+kinds who want to improve thir memory they can use it , or for  time pass or for fun  people can use this game 
+
+The steps the user takes to accomplish a particular task .
+open the game first , then we have to click one by one tile
+every tile has assigned pictures so clicking tile it reveals its assigned picture then program will match the pictures that we clicked 
+if they matched then they will be removed , 
+after finding all the pairs if user wants another game then there is a button 'new game ' click it it will start a new game agian.
 
 
 7. Screen plans
