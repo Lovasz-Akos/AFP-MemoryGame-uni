@@ -47,7 +47,7 @@ certain elements' css classes and starting a new game by the click of a button.
 describes the plan for testing the program
 
 10. Install plan
-describes the installation of the program
+We make the installation as a package installation,so any user do not need to worry about the installation
 
 11. Maintenance plan
 describes the requirements for the program's upkepp such as troubleshooting, further updates or expansions
