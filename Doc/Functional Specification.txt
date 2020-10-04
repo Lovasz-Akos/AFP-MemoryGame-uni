@@ -32,4 +32,7 @@ pictures of how we imagin the interface will look like
 describes the flow of the typical usage of the program
 
 9. Glossary
-same as in req.spec.
+HTML: Hypertext Markup Language, the foundation of any website
+CSS: Cascading Style Sheets, this can be used to make a page look prettier
+JavaScript: A programming language that's widely used in web enviorements
+u: replacement for the english word "you". used by lazy people and in casual online conversations.
