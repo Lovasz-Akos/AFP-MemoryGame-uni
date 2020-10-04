@@ -49,7 +49,9 @@ the tester should have the ability to understand customers point of view,then we
 program,the goal is to test the whole program 100 times by the tester and no mistakes occure 
 
 10. Install plan
-We make the installation as a package installation,so any user do not need to worry about the installation
+Installing the software and Checking out the software once installed
+Initializing databases and other software with site-specific data and Conversion from the current system, possibly involving running in parallel
+Dry run of procedures in user manuals
 
 11. Maintenance plan
 Our team will spy the process of this program,as long as trouble appear,we will solve it as soon as possible
