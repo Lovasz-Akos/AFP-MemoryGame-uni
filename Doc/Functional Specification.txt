@@ -31,7 +31,7 @@ same as in req.spec. but from our perspective
 
 >>>>>>> 271de4c64690d03d4f7cbab670800490d68c4a4f
 5. Required business flow
-If we want to make this game bigger,we can just download more images,reshape them,it will be harder.
+this game is used to test and practice player's brain,there is no any limitation
 
 6.Use cases
 lists what privleges are needed for certain functions
