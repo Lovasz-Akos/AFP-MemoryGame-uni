@@ -10,19 +10,28 @@ our game is a web application so its made of JsvsScript,HTML and CSS.
 
 
 2. Current situation
-describes why the program is needed, or why it has been created
+This game is very smart and useful,it can not only practice our brain,but also test our brain
 
 3. List of requirements
-lists the program's functions (in more detail than in req.spec.)
+New Game - The New Game function generates 16 tiles with unique IDs and hidden background images.Upon pressing the New Game button on top of the screen
+ShowImg and HideImg - The ShowImg function reveals the given tile's hidden background image once the tile is clicked,the HideImg function changes the tile back to the original state,when the two tiles do not match up
+Check Status - This function checks if the same tile has been clicked twice and if it is, it flips back the tile.
+Hide Tile - Removes the tiles it recieves. This will be used when a match is found
+Flip - Handles tile flipping and matching logics, controls the amount of tiles that can be revealed at the same time,which means two
 
 4. Current business flow model
+<<<<<<< HEAD
 we made a memory game in which we have pictures in gird view and pictures are hidden in tiles  and we have to click one by one tile
 every tile has assigned pictures so clicking tile it reveals its assigned picture then program will match the pictures that we clicked 
 if they matched then they will be removed , 
 so the Goal is find all the pairs and finish the game , 
 for star new game there is a button 'new game ' by clicking new game it will reset the pictures and start again .
-5. Required business flow
+=======
 same as in req.spec. but from our perspective
+
+>>>>>>> 271de4c64690d03d4f7cbab670800490d68c4a4f
+5. Required business flow
+If we want to make this game bigger,we can just download more images,reshape them,it will be harder.
 
 6.Use cases
 lists what privleges are needed for certain functions
@@ -34,7 +43,15 @@ pictures of how we imagin the interface will look like
 
 
 8. Script
-describes the flow of the typical usage of the program
+player click “start” ,there will be squares the have pictures
+Click a tile reveals the picture,
+Click a tile while having one revealed,will reveal the second one and check if they match up
+If they do, both tiles are removed from the screen. If they don't, the pictures get hidden again and the next round starts.
+If the player finds all the pairs, the game is over.
+Clicking the "new game" button resets the game
 
 9. Glossary
-same as in req.spec.
+HTML: Hypertext Markup Language, the foundation of any website
+CSS: Cascading Style Sheets, this can be used to make a page look prettier
+JavaScript: A programming language that's widely used in web enviorements
+u: replacement for the english word "you". used by lazy people and in casual online conversations.

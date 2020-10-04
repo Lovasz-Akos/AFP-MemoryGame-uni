@@ -11,7 +11,7 @@ desciption or diagram of the software's usage
 lists the program's goals that have to be met
 
 5. Functional plan
-describes user roles and their duties
+User do not have any roles and duties,this game is completely for brain practice and test
 
 6. Physical enviorement
 describe the platfor the program was made for and what was used to create it
@@ -44,10 +44,15 @@ tile matching logic, tile flipping counter, flipping and hiding tiles via changi
 certain elements' css classes and starting a new game by the click of a button.
 
 9. Testing plan
-describes the plan for testing the program
+during test stratgy,we need to test every function one by one,including API testing and system testing
+the tester should have the ability to understand customers point of view,then we should test the whole
+program,the goal is to test the whole program 100 times by the tester and no mistakes occure 
 
 10. Install plan
-describes the installation of the program
+Installing the software and Checking out the software once installed
+Initializing databases and other software with site-specific data and Conversion from the current system, possibly involving running in parallel
+Dry run of procedures in user manuals
 
 11. Maintenance plan
-describes the requirements for the program's upkepp such as troubleshooting, further updates or expansions
+Our team will spy the process of this program,as long as trouble appear,we will solve it as soon as possible
+And because it is a simple game ,we do not need to update it
