@@ -24,7 +24,7 @@ same as in req.spec. but from our perspective
 
 
 5. Required business flow
-same as in req.spec. but from our perspective
+If we want to make this game bigger,we can just download more images,reshape them,it will be harder.
 
 6.Use cases
 lists what privleges are needed for certain functions
