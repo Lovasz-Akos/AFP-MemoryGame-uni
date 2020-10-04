@@ -16,17 +16,22 @@ describes why the program is needed, or why it has been created
 lists the program's functions (in more detail than in req.spec.)
 
 4. Current business flow model
-same as in req.spec. but from our perspective
-
-
+we made a memory game in which we have pictures in gird view and pictures are hidden in tiles  and we have to click one by one tile
+every tile has assigned pictures so clicking tile it reveals its assigned picture then program will match the pictures that we clicked 
+if they matched then they will be removed , 
+so the Goal is find all the pairs and finish the game , 
+for star new game there is a button 'new game ' by clicking new game it will reset the pictures and start again .
 5. Required business flow
 same as in req.spec. but from our perspective
 
 6.Use cases
 lists what privleges are needed for certain functions
 
+
 7. Screen plans
 pictures of how we imagin the interface will look like
+
+
 
 8. Script
 describes the flow of the typical usage of the program
