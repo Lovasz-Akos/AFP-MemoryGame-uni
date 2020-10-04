@@ -11,7 +11,7 @@ desciption or diagram of the software's usage
 lists the program's goals that have to be met
 
 5. Functional plan
-describes user roles and their duties
+User do not have any roles and duties,this game is completely for brain practice and test
 
 6. Physical enviorement
 describe the platfor the program was made for and what was used to create it
