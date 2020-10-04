@@ -44,8 +44,8 @@ tile matching logic, tile flipping counter, flipping and hiding tiles via changi
 certain elements' css classes and starting a new game by the click of a button.
 
 9. Testing plan
-during test stratgy,we need to test evert function one by one,including API testing and system testing
-the test should have the Ability to understand customers point of view,then we should test the whole
+during test stratgy,we need to test every function one by one,including API testing and system testing
+the tester should have the ability to understand customers point of view,then we should test the whole
 program,the goal is to test the whole program 100 times by the tester and no mistakes occure 
 
 10. Install plan
