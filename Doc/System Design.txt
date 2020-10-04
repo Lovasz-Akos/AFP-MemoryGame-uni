@@ -44,7 +44,7 @@ tile matching logic, tile flipping counter, flipping and hiding tiles via changi
 certain elements' css classes and starting a new game by the click of a button.
 
 9. Testing plan
-describes the plan for testing the program
+Because it is a simple game ,we will invite as least 100 people to play this game,and spy the process of this game,to find the problems it has as more as possible,then fix all of them
 
 10. Install plan
 We make the installation as a package installation,so any user do not need to worry about the installation
