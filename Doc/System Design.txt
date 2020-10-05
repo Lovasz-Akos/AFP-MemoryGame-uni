@@ -4,6 +4,7 @@ describes what the porgram aims to achieve
 2. Project plan
 lists contributors and their roles as well as the schedule and milestones
 
+
 3. Business process model
 desciption or diagram of the software's usage
 
@@ -14,7 +15,8 @@ lists the program's goals that have to be met
 User do not have any roles and duties,this game is completely for brain practice and test
 
 6. Physical enviorement
-describe the platfor the program was made for and what was used to create it
+describe the platform the program was made for and what was used to create it ,
+the platform for the program is visual studio code , and it was created by Javascript , HTML and CSS .
 
 7. Architectural plan
 The application's design was created via HTML and CSS. The HTML contains a wrapper
