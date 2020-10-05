@@ -10,6 +10,15 @@ our last aim is to make a easy program so that we can percatice and will get rea
 
 lists contributors and their roles as well as the schedule and milestones
 
+Contributors.                Roles.                        schedule 
+
+1.Lovász Ákos       >  Idia of game and documentation    = before 8th october 
+2.Bálint Krigovszki > documentation                      = before 8th october
+3.Om Parkash        > documentation                      = before 8th october
+4.yang yizhou       > documentation                      = before 8th october
+
+
+
 
 3. Business process model
 desciption or diagram of the software's usage
