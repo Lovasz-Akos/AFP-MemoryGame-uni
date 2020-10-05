@@ -21,10 +21,25 @@ Contributors.                Roles.
 
 
 3. Business process model
-desciption or diagram of the software's usage
+desciption of the software's usage
+game can be played like this,
+we have pictures in gird view and pictures are hidden in tiles  and we have to click one by one tile
+every tile has assigned pictures so clicking tile it reveals its assigned picture then program will 
+ match the pictures that we clicked if they matched then they will be removed , 
+so the Goal is find all the pairs and finish the game , 
+for start new game there is a button 'new game ' by clicking new game it will reset the pictures and start again .
+
+
 
 4. Requirements
 lists the program's goals that have to be met
+program's goals are ,
+ . make a simple and short memory game
+ . to have an experience about project 
+ . to make a game that can used be used for fun and knowledge 
+ . to make game more visualy good (looks of interface)
+ . to make game more understandable 
+ 
 
 5. Functional plan
 User do not have any roles and duties,this game is completely for brain practice and test
