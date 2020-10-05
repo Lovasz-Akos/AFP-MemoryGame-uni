@@ -1,5 +1,4 @@
 1. Overview
-describes the whole project
 we have a project in which we have made a memory Game, 
 Game is consist of A 4 by 4 grid of squares that have pictures assigned, 
 Goal of the game is to find all pairs in the game,
@@ -46,11 +45,8 @@ every tile has assigned pictures so clicking tile it reveals its assigned pictur
 if they matched then they will be removed , 
 after finding all the pairs if user wants another game then there is a button 'new game ' click it it will start a new game agian.
 
-
 7. Screen plans
 pictures of how we imagin the interface will look like
-
-
 
 8. Script
 player click “start” ,there will be squares the have pictures
