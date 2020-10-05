@@ -1,7 +1,13 @@
 1. Goal of the system
 describes what the porgram aims to achieve
+The goal of program is provide a very simple and easy memory game , and a game who;s goal is to get all the tiles flipped face up  
+(i.e., find all the matching image pairs) in the least number of tries.  Playing memory games can improve the player's short-term memory, dexterity, reaction time, precision and strategy.
+for the perpose of stress-free this game has not timer , no tention of time play relaxily.
+our last aim is to make a easy program so that we can percatice and will get ready to make big projects.
+
 
 2. Project plan
+
 lists contributors and their roles as well as the schedule and milestones
 
 
