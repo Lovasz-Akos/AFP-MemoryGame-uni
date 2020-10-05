@@ -100,7 +100,6 @@ function generatePairs() {
     });
 
     do {
-
         tableIndexHelper++;
 
         console.log(document.getElementById(tileIdTable[tableIndexHelper - 1]));
