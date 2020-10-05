@@ -3,7 +3,8 @@ var newTileID = "";
 var firstTileID = "";
 
 var pictureTitles = ["calculator", "diamond", "fish", "hotdog", "orange", "pyramid", "sun", "viking"];
-
+var tileIdTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+var pictureAssignmentTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 
 
 var pictures = [""]; //contains the list of assignable pictures 
@@ -26,12 +27,8 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
         showImg(tileID);
         //TODO add checker logic. This needs the pictures and the randomiser to be done. 
         console.log("second click");
-        if (!checkStatus(tileID, flippedCounter)) {
-            console.log("TRUUU");
-            setTimeout(hideAllImgs, 500);
-        } else {
-            console.log("Faelsz");
-        }
+        console.log("TRUUU");
+        setTimeout(hideAllImgs, 500);
         console.log("first:" + firstTileID);
         console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
     }
@@ -64,7 +61,7 @@ function hideAllImgs() {
 
 function checkStatus(tileID, counter) {
     if (newTileID == firstTileID) {
-        console.log("clicked the same tile twice. this...does nothing.");
+        //console.log("clicked the same tile twice. this...does nothing.");
         return true;
     }
 }
@@ -73,6 +70,11 @@ function newGame() {
     //TODO randomly assign pictures to tiles
     hideAllImgs();
     generatePairs();
+
+    console.log("----------------------------------");
+    pictureAssignmentTable.forEach(element => {
+        console.log(element);
+    });
 }
 
 function hideTile(tileID) {
@@ -84,30 +86,31 @@ function hideTile(tileID) {
 }
 
 function generatePairs() {
-    var assignmentTable = [];
     var assignmentIndexHelper = 0;
     var tableIndexHelper = 0;
 
-    for (var i = 0; i < 16; i++) {
-        assignmentTable.push('b' + i);
-        //console.log(assignmentTable[i]);
+    for (var i = 0; i < tileIdTable.length; i++) {
+        tileIdTable[i] = 'b' + i;
+        console.log(tileIdTable[i]);
     }
 
-    shuffle(assignmentTable);
-    assignmentTable.forEach(element => {
+    shuffle(tileIdTable);
+    tileIdTable.forEach(element => {
         console.log(element);
     });
 
     do {
+
         tableIndexHelper++;
 
-        console.log(document.getElementById(assignmentTable[tableIndexHelper - 1]));
+        console.log(document.getElementById(tileIdTable[tableIndexHelper - 1]));
 
-        document.getElementById(assignmentTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
+        document.getElementById(tileIdTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
         tableIndexHelper++;
-        document.getElementById(assignmentTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
+        document.getElementById(tileIdTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
 
         assignmentIndexHelper++;
+
     }
     while (tableIndexHelper < 16);
 }
