@@ -2,6 +2,10 @@ var flippedCounter = 0;
 var newTileID = "";
 var firstTileID = "";
 
+var pictureTitles = ["calculator", "diamond", "fish", "hotdog", "orange", "pyramid", "sun", "viking"];
+
+
+
 var pictures = [""]; //contains the list of assignable pictures 
 
 function flip(tileID) { //onclick of tiles calls this function, with it's own id (for example: b4), that's stored in tileID
@@ -64,10 +68,7 @@ function checkStatus(tileID, counter) {
 function newGame() {
     //TODO randomly assign pictures to tiles
     hideAllImgs();
-    hideTile('b0');
-    hideTile('b1');
-    hideTile('b2');
-    hideTile('b3');
+    generatePairs();
 }
 
 function hideTile(tileID) {
@@ -75,7 +76,45 @@ function hideTile(tileID) {
     var hiddenPlaceholder = document.createElement("div");
     hiddenPlaceholder.className = "hiddenBox";
     //    hiddenPlaceholder.setAttribute("style", "")
-
-
     element.parentNode.replaceChild(hiddenPlaceholder, element);
+}
+
+function generatePairs() {
+    var pictureProxy = [];
+    var assignmentTable = [];
+
+    pictureTitles.forEach(element => {
+        pictureProxy.push(element);
+    });
+
+    for (var i = 0; i < 16; i++) {
+        assignmentTable.push('b' + i);
+        console.log(assignmentTable[i]);
+    }
+
+    shuffle(assignmentTable);
+    assignmentTable.forEach(element => {
+        console.log(element);
+    });
+}
+
+//Fisher-Yates shuffle
+function shuffle(array) {
+    var currentIndex = array.length,
+        temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
 }
