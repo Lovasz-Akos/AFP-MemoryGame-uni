@@ -47,6 +47,7 @@ after finding all the pairs if user wants another game then there is a button 'n
 
 7. Screen plans
 pictures of how we imagin the interface will look like
+we have first look of our project how it will look like , http://127.0.0.1:5500/AFP-1-2020-Team1/index.html
 
 8. Script
 player click “start” ,there will be squares the have pictures
