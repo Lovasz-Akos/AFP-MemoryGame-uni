@@ -1,5 +1,4 @@
 1. Goal of the system
-describes what the porgram aims to achieve
 The goal of program is provide a very simple and easy memory game , and a game who;s goal is to get all the tiles flipped face up  
 (i.e., find all the matching image pairs) in the least number of tries.  Playing memory games can improve the player's short-term memory, dexterity, reaction time, precision and strategy.
 for the perpose of stress-free this game has not timer , no tention of time play relaxily.
@@ -7,9 +6,6 @@ our last aim is to make a easy program so that we can percatice and will get rea
 
 
 2. Project plan
-
-lists contributors and their roles as well as the schedule and milestones
-
 Contributors.                Roles.                        
 
 1.Lovász Ákos       > Original game idea, Backend programmer, Project manager, Documentation    
@@ -21,7 +17,6 @@ Contributors.                Roles.
 
 
 3. Business process model
-desciption of the software's usage
 game can be played like this,
 we have pictures in gird view and pictures are hidden in tiles  and we have to click one by one tile
 every tile has assigned pictures so clicking tile it reveals its assigned picture then program will 
@@ -32,7 +27,6 @@ for start new game there is a button 'new game ' by clicking new game it will re
 
 
 4. Requirements
-lists the program's goals that have to be met
 program's goals are ,
  . make a simple and short memory game
  . to have an experience about project 
@@ -45,7 +39,6 @@ program's goals are ,
 User do not have any roles and duties,this game is completely for brain practice and test
 
 6. Physical enviorement
-describe the platform the program was made for and what was used to create it ,
 the platform for the program is visual studio code , and it was created by Javascript , HTML and CSS .
 
 7. Architectural plan
