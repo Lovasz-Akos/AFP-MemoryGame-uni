@@ -26,8 +26,12 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
         showImg(tileID);
         //TODO add checker logic. This needs the pictures and the randomiser to be done. 
         console.log("second click");
-        checkStatus(tileID, flippedCounter);
-        setTimeout(hideAllImgs, 500);
+        if (!checkStatus(tileID, flippedCounter)) {
+            console.log("TRUUU");
+            setTimeout(hideAllImgs, 500);
+        } else {
+            console.log("Faelsz");
+        }
         console.log("first:" + firstTileID);
         console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
     }
@@ -61,7 +65,7 @@ function hideAllImgs() {
 function checkStatus(tileID, counter) {
     if (newTileID == firstTileID) {
         console.log("clicked the same tile twice. this...does nothing.");
-        hideImg(tileID);
+        return true;
     }
 }
 
@@ -80,22 +84,29 @@ function hideTile(tileID) {
 }
 
 function generatePairs() {
-    var pictureProxy = [];
     var assignmentTable = [];
-
-    pictureTitles.forEach(element => {
-        pictureProxy.push(element);
-    });
+    var assignmentIndexHelper = 0;
+    var tableIndexHelper = -1;
 
     for (var i = 0; i < 16; i++) {
         assignmentTable.push('b' + i);
-        console.log(assignmentTable[i]);
+        //console.log(assignmentTable[i]);
     }
 
     shuffle(assignmentTable);
     assignmentTable.forEach(element => {
         console.log(element);
     });
+
+    do {
+        tableIndexHelper++;
+        console.log(document.getElementById(assignmentTable[tableIndexHelper]));
+        document.getElementById(assignmentTable[tableIndexHelper]).style.backgroundImage = 'images/' + pictureTitles[assignmentIndexHelper] + '.png';
+        tableIndexHelper++;
+        document.getElementById(assignmentTable[tableIndexHelper]).style.backgroundImage = 'images/' + pictureTitles[assignmentIndexHelper] + '.png';
+        assignmentIndexHelper++;
+    }
+    while (tableIndexHelper <= assignmentTable.length);
 }
 
 //Fisher-Yates shuffle
