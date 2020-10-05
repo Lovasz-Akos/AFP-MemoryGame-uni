@@ -103,9 +103,9 @@ function generatePairs() {
 
         console.log(document.getElementById(assignmentTable[tableIndexHelper - 1]));
 
-        document.getElementById(assignmentTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/ " + pictureTitles[assignmentIndexHelper] + ".png');");
-        //tableIndexHelper++;
-        document.getElementById(assignmentTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/ " + pictureTitles[assignmentIndexHelper] + ".png');");
+        document.getElementById(assignmentTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
+        tableIndexHelper++;
+        document.getElementById(assignmentTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
 
         assignmentIndexHelper++;
     }
