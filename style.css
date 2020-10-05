@@ -59,4 +59,5 @@ button:hover {
     text-align: center;
     background-color: #443737;
     opacity: 0;
+    transition: 0.5s ease;
 }

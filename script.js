@@ -86,7 +86,7 @@ function hideTile(tileID) {
 function generatePairs() {
     var assignmentTable = [];
     var assignmentIndexHelper = 0;
-    var tableIndexHelper = -1;
+    var tableIndexHelper = 0;
 
     for (var i = 0; i < 16; i++) {
         assignmentTable.push('b' + i);
@@ -100,13 +100,16 @@ function generatePairs() {
 
     do {
         tableIndexHelper++;
-        console.log(document.getElementById(assignmentTable[tableIndexHelper]));
-        document.getElementById(assignmentTable[tableIndexHelper]).style.backgroundImage = 'images/' + pictureTitles[assignmentIndexHelper] + '.png';
+
+        console.log(document.getElementById(assignmentTable[tableIndexHelper - 1]));
+
+        document.getElementById(assignmentTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
         tableIndexHelper++;
-        document.getElementById(assignmentTable[tableIndexHelper]).style.backgroundImage = 'images/' + pictureTitles[assignmentIndexHelper] + '.png';
+        document.getElementById(assignmentTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
+
         assignmentIndexHelper++;
     }
-    while (tableIndexHelper <= assignmentTable.length);
+    while (tableIndexHelper < 16);
 }
 
 //Fisher-Yates shuffle
