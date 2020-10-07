@@ -1,60 +1,69 @@
 body {
-  overflow-x: hidden;
-  text-align: center;
-	background-color: #272121;
-  margin-top: 2%;
-  margin-bottom: 3%;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #272121;
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
-::-webkit-scrollbar { display: none; }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 button {
-  width: 200px;
-  outline: 0;
-  border: 2px solid #443737;
-  font-size: 120%;
-  -webkit-appearance: none;
-  background: none;
-  text-align: center;
-  background-color: transparent;
-  /*background-color: #443737;*/
-  border-radius: 5px;
-  padding: 15px;
-  margin-bottom: 1%;
-  color: #ccbaba;
-  font-family: 'Comfortaa', cursive;
-  transition:  0.5s ease;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    outline: 0;
+    border: 2px solid #443737;
+    font-size: 120%;
+    -webkit-appearance: none;
+    background: none;
+    text-align: center;
+    background-color: transparent;
+    /*background-color: #443737;*/
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 1%;
+    color: #ccbaba;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.5s ease;
 }
+
 button:hover {
-  transition:  0.5s ease; 
-  background-color: #443737;
-  box-shadow:  0 0px 10px #ccbaba;
-  text-shadow:  0 0px 5px #ccbaba;
+    transition: 0.5s ease;
+    background-color: #443737;
+    box-shadow: 0 0px 10px #ccbaba;
+    text-shadow: 0 0px 5px #ccbaba;
 }
+
 .wrapper {
-  justify-content: center;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 175px 175px 175px 175px;
-  grid-gap: 25px;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 175px 175px 175px 175px;
+    grid-gap: 25px;
 }
+
 .box {
-  height: 175px;
-  text-align: center;
-  background-color: #443737;
-  border-radius: 10px;
-  color: #ccbaba;
-  transition: 0.5s ease;
-  box-shadow: inset 0px 0px 10px rgba(0,0,0, .6);
-  border-radius: 10px;
+    height: 175px;
+    text-align: center;
+    background-color: #443737;
+    border-radius: 10px;
+    color: #ccbaba;
+    transition: 0.5s ease;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, .6);
+    border-radius: 10px;
 }
+
 .box:hover {
-  border-radius: 10px;
-  transition: 0.5s ease;
-  background-color: #463939;
-  box-shadow: inset 0px 0px 10px rgba(255,255,255, .3),
-                    0 0px 15px #ccbaba;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    background-color: #463939;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, .3), 0 0px 15px #ccbaba;
 }
-.hiddenBox
-{
+
+.hiddenBox {
     border-radius: 10px;
     height: 175px;
     text-align: center;
@@ -62,14 +71,15 @@ button:hover {
     opacity: 0;
     transition: 0.5s ease;
 }
+
 .win-state {
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  margin-top: 15%;
-  font-family: 'Comfortaa', cursive;
-  font-size: 120px;
-  color: #6ee069;
-  text-shadow: 0 0px 15px #42ba3d;
-  transition: 0.5s ease;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 120px;
+    color: #6ee069;
+    text-shadow: 0 0px 15px #42ba3d;
+    transition: 0.5s ease;
 }

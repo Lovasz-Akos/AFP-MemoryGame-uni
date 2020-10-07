@@ -64,7 +64,10 @@ function checkStatus(tileID, counter) {
 
 function newGame() {
     document.getElementById('wrapper').style = "grid-template-columns: 175px 175px 175px 175px;";
+    document.getElementById('newgameBTN').remove();
+
     matches = 0;
+
     recoverTiles();
     hideAllImgs();
     generatePairs();
@@ -158,14 +161,25 @@ function getBackgorundImgTitle(tileID) {
 }
 
 function showEndScreen() {
+
     setTimeout(function() {
-var wrap = document.getElementById('wrapper');
-    wrap.innerHTML = '';
-    var win = document.createElement("div");
-    win.innerText = ("You Win!");
-    win.className = ("win-state");
-    wrap.style = "grid-template-columns: 1000px;";
-    wrap.appendChild(win);
-        }, 650)
-    
+        var wrap = document.getElementById('wrapper');
+        var btn = document.createElement("BUTTON");
+        var win = document.createElement("div");
+        var placeholder = document.createElement("div");
+
+        wrap.innerHTML = '';
+        win.innerText = ("You Win!");
+        win.className = ("win-state");
+        wrap.style = "grid-template-columns: 1000px;";
+        wrap.appendChild(win);
+
+        wrap.appendChild(placeholder);
+
+        btn.innerHTML = "New Game";
+        btn.id = "newgameBTN";
+        btn.className = ("button");
+        btn.onclick = function() { newGame(); };
+        wrap.appendChild(btn);
+    }, 650)
 }
