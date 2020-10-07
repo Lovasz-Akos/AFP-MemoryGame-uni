@@ -2,6 +2,8 @@ var flippedCounter = 0;
 var newTileID = "";
 var firstTileID = "";
 
+var matches = 0;
+
 var pictureTitles = ["calculator", "diamond", "fish", "hotdog", "orange", "pyramid", "sun", "viking"];
 
 var tileIdTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
@@ -61,6 +63,7 @@ function checkStatus(tileID, counter) {
 }
 
 function newGame() {
+    matches = 0;
     recoverTiles();
     hideAllImgs();
     generatePairs();
@@ -138,6 +141,10 @@ function hideTesting() {
 function matchChecker(id1, id2) {
 
     if (getBackgorundImgTitle(id1) == getBackgorundImgTitle(id2)) { //match
+        matches++;
+        if (matches == 8) {
+            showEndScreen();
+        }
         return true;
     } else { //not match
         return false;
@@ -147,4 +154,8 @@ function matchChecker(id1, id2) {
 function getBackgorundImgTitle(tileID) {
     const index = tileID.split('b').pop();
     return pictureAssignmentTable[tileIdTable[index].split('b').pop()];
+}
+
+function showEndScreen() {
+
 }
