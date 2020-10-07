@@ -12,10 +12,11 @@
 <body>
 <h3><p style="color:#B0BF1A; font-family:consolas">THIS IS VERY MUCH INCOMPLETE SO IF A BUTTON DOESN'T DO WHAT IT SHOULD, IT WAS PROBABLY USED TO TEST SOME OTHER FUNCTION</h1></p>
 	<button id="newgame" onclick=newGame()>New Game</button>
+	<button id="newgame" onclick=hideTesting()>hide b1</button>
 	<div class="wrapper" id="wrapper">
 	</div>
 	<script type="text/javascript">
-		var i;
+		var i; //do we need this?
 		for (var i = 0; i < 16; i++) {
 			wrapper.innerHTML += "<div class=box id=b"+i+" onclick=flip('b"+i+"')></div>" 
 		}

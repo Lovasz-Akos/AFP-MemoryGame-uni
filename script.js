@@ -67,14 +67,9 @@ function checkStatus(tileID, counter) {
 }
 
 function newGame() {
-    //TODO randomly assign pictures to tiles
+    recoverTiles();
     hideAllImgs();
     generatePairs();
-
-    console.log("----------------------------------");
-    pictureAssignmentTable.forEach(element => {
-        console.log(element);
-    });
 }
 
 function hideTile(tileID) {
@@ -84,6 +79,7 @@ function hideTile(tileID) {
     //    hiddenPlaceholder.setAttribute("style", "")
     element.parentNode.replaceChild(hiddenPlaceholder, element);
 }
+
 
 function generatePairs() {
     var assignmentIndexHelper = 0;
@@ -102,16 +98,24 @@ function generatePairs() {
     do {
         tableIndexHelper++;
 
-        console.log(document.getElementById(tileIdTable[tableIndexHelper - 1]));
+        //console.log(document.getElementById(tileIdTable[tableIndexHelper - 1]));
 
-        document.getElementById(tileIdTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
+        pictureAssignmentTable[tableIndexHelper - 1] = pictureTitles[assignmentIndexHelper];
+        tileIdTable[tableIndexHelper - 1] = 'b' + tableIndexHelper - 1;
+        //document.getElementById(tileIdTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
+
         tableIndexHelper++;
-        document.getElementById(tileIdTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
+
+        pictureAssignmentTable[tableIndexHelper - 1] = pictureTitles[assignmentIndexHelper];
+        tileIdTable[tableIndexHelper - 1] = 'b' + tableIndexHelper - 1;
+        //document.getElementById(tileIdTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
 
         assignmentIndexHelper++;
 
     }
     while (tableIndexHelper < 16);
+
+
 }
 
 //Fisher-Yates shuffle
@@ -133,4 +137,20 @@ function shuffle(array) {
     }
 
     return array;
+}
+
+function recoverTiles() {
+    const myNode = document.getElementById("wrapper");
+    myNode.innerHTML = '';
+    for (var i = 0; i < 16; i++) {
+        wrapper.innerHTML += "<div class=box id=b" + i + " onclick=flip('b" + i + "')></div>"
+    }
+}
+
+function hideTesting() {
+    var element = document.getElementById('b1');
+    var hiddenPlaceholder = document.createElement("div");
+    hiddenPlaceholder.className = "hiddenBox";
+    //    hiddenPlaceholder.setAttribute("style", "")
+    element.parentNode.replaceChild(hiddenPlaceholder, element);
 }
