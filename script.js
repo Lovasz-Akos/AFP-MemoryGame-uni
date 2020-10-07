@@ -3,6 +3,7 @@ var newTileID = "";
 var firstTileID = "";
 
 var pictureTitles = ["calculator", "diamond", "fish", "hotdog", "orange", "pyramid", "sun", "viking"];
+
 var tileIdTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 var pictureAssignmentTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 
@@ -22,25 +23,30 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
         console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
     }
 
-    if (flippedCounter == 2) {
+    if (flippedCounter == 2 && firstTileID != newTileID) {
         showImg(tileID);
-        //TODO add checker logic. This needs the pictures and the randomiser to be done. 
-        console.log("second click");
+
+        if (matchChecker(firstTileID, newTileID)) {
+            hideTile(firstTileID);
+            hideTile(newTileID);
+        }
+
         setTimeout(hideAllImgs, 500);
+
+        console.log("second click");
         console.log("first:" + firstTileID);
         console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
+    }
+    if (flippedCounter == 2 && firstTileID == newTileID) {
+        flippedCounter = 1;
     }
 }
 
 function showImg(tileID) {
-    var i = tileID.charAt(1);
+    const i = tileID.split('b').pop();
     document.getElementById(tileID).setAttribute("style", "transform: rotate3d(0, 1, 0, -180deg); background-image:url('images/" + pictureAssignmentTable[i] + ".png');");
 }
 
-function hideImg(tileID) {
-    document.getElementById(tileID).style.backgroundColor = "#443737";
-    document.getElementById(tileID).style.backgroundImage = "";
-}
 
 function hideAllImgs() {
     for (var i = 0; i < 16; i++) {
@@ -71,11 +77,14 @@ function newGame() {
 }
 
 function hideTile(tileID) {
-    var element = document.getElementById(tileID);
-    var hiddenPlaceholder = document.createElement("div");
-    hiddenPlaceholder.className = "hiddenBox";
-    //    hiddenPlaceholder.setAttribute("style", "")
-    element.parentNode.replaceChild(hiddenPlaceholder, element);
+    setTimeout(function() {
+        var element = document.getElementById(tileID);
+        var hiddenPlaceholder = document.createElement("div");
+        hiddenPlaceholder.className = "hiddenBox";
+        //    hiddenPlaceholder.setAttribute("style", "")
+        element.parentNode.replaceChild(hiddenPlaceholder, element);
+    }, 650)
+
 }
 
 
@@ -88,11 +97,6 @@ function generatePairs() {
         console.log(tileIdTable[i]);
     }
 
-    shuffle(tileIdTable);
-    tileIdTable.forEach(element => {
-        console.log(element);
-    });
-
     do {
         tableIndexHelper++;
 
@@ -104,16 +108,15 @@ function generatePairs() {
     }
     while (tableIndexHelper < 16);
 
-    console.log("---------------------");
+    shuffle(tileIdTable);
     tileIdTable.forEach(element => {
         console.log(element);
     });
 
     console.log("---------------------");
-    pictureAssignmentTable.forEach(element => {
-        console.log(element);
-    });
-
+    for (var i = 0; i < 16; i++) {
+        console.log(tileIdTable[i] + " = " + pictureAssignmentTable[i]);
+    }
 
 }
 
@@ -152,4 +155,19 @@ function hideTesting() {
     hiddenPlaceholder.className = "hiddenBox";
     //    hiddenPlaceholder.setAttribute("style", "")
     element.parentNode.replaceChild(hiddenPlaceholder, element);
+}
+
+function matchChecker(id1, id2) {
+    const index1 = id1.split('b').pop();
+    const index2 = id2.split('b').pop();
+
+    console.log("----------");
+    console.log(index1);
+    console.log(index2);
+
+    if (pictureAssignmentTable[index1] == pictureAssignmentTable[index2]) { //match
+        return true;
+    } else { //not match
+        return false;
+    }
 }
