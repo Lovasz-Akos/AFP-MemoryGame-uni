@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  /*overflow: hidden;*/
   text-align: center;
 	background-color: #272121;
   margin-top: 2%;
@@ -60,4 +60,15 @@ button:hover {
     background-color: #443737;
     opacity: 0;
     transition: 0.5s ease;
+}
+#win-state {
+  width: 50vw;
+  margin: auto;
+  margin-top: 10%;
+  font-family: 'Comfortaa', cursive;
+  z-index: -1;
+  font-size: 120px;
+  color: #6ee069;
+  text-shadow: 0 0px 15px #42ba3d;
+  display: none;
 }
