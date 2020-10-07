@@ -1,10 +1,11 @@
 body {
-  /*overflow: hidden;*/
+  overflow-x: hidden;
   text-align: center;
 	background-color: #272121;
   margin-top: 2%;
   margin-bottom: 3%;
 }
+::-webkit-scrollbar { display: none; }
 button {
   width: 200px;
   outline: 0;
@@ -61,14 +62,14 @@ button:hover {
     opacity: 0;
     transition: 0.5s ease;
 }
-#win-state {
-  width: 50vw;
+.win-state {
+  text-align: center;
+  justify-content: center;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 15%;
   font-family: 'Comfortaa', cursive;
-  z-index: -1;
   font-size: 120px;
   color: #6ee069;
   text-shadow: 0 0px 15px #42ba3d;
-  display: none;
+  transition: 0.5s ease;
 }
