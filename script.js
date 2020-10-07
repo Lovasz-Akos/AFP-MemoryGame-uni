@@ -6,8 +6,7 @@ var pictureTitles = ["calculator", "diamond", "fish", "hotdog", "orange", "pyram
 var tileIdTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 var pictureAssignmentTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 
-
-var pictures = [""]; //contains the list of assignable pictures 
+newGame();
 
 function flip(tileID) { //onclick of tiles calls this function, with it's own id (for example: b4), that's stored in tileID
 
@@ -27,7 +26,6 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
         showImg(tileID);
         //TODO add checker logic. This needs the pictures and the randomiser to be done. 
         console.log("second click");
-        console.log("TRUUU");
         setTimeout(hideAllImgs, 500);
         console.log("first:" + firstTileID);
         console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
@@ -35,8 +33,8 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
 }
 
 function showImg(tileID) {
-    document.getElementById(tileID).setAttribute("style", "transform: rotate3d(0, 1, 0, -180deg); background-image:url('images/fish.png');");
-    // document.getElementById(tileID).setAttribute("style", "background-image:url('images/fish.png');");
+    var i = tileID.charAt(1);
+    document.getElementById(tileID).setAttribute("style", "transform: rotate3d(0, 1, 0, -180deg); background-image:url('images/" + pictureAssignmentTable[i] + ".png');");
 }
 
 function hideImg(tileID) {
@@ -98,22 +96,23 @@ function generatePairs() {
     do {
         tableIndexHelper++;
 
-        //console.log(document.getElementById(tileIdTable[tableIndexHelper - 1]));
-
         pictureAssignmentTable[tableIndexHelper - 1] = pictureTitles[assignmentIndexHelper];
-        tileIdTable[tableIndexHelper - 1] = 'b' + tableIndexHelper - 1;
-        //document.getElementById(tileIdTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
-
         tableIndexHelper++;
-
         pictureAssignmentTable[tableIndexHelper - 1] = pictureTitles[assignmentIndexHelper];
-        tileIdTable[tableIndexHelper - 1] = 'b' + tableIndexHelper - 1;
-        //document.getElementById(tileIdTable[tableIndexHelper - 1]).setAttribute("style", "background-image:url('images/" + pictureTitles[assignmentIndexHelper] + ".png');");
 
         assignmentIndexHelper++;
-
     }
     while (tableIndexHelper < 16);
+
+    console.log("---------------------");
+    tileIdTable.forEach(element => {
+        console.log(element);
+    });
+
+    console.log("---------------------");
+    pictureAssignmentTable.forEach(element => {
+        console.log(element);
+    });
 
 
 }
@@ -140,8 +139,8 @@ function shuffle(array) {
 }
 
 function recoverTiles() {
-    const myNode = document.getElementById("wrapper");
-    myNode.innerHTML = '';
+    const wrapper = document.getElementById("wrapper");
+    wrapper.innerHTML = '';
     for (var i = 0; i < 16; i++) {
         wrapper.innerHTML += "<div class=box id=b" + i + " onclick=flip('b" + i + "')></div>"
     }
