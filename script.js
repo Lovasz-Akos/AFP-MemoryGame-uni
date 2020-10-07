@@ -7,7 +7,8 @@ var pictureTitles = ["calculator", "diamond", "fish", "hotdog", "orange", "pyram
 var tileIdTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 var pictureAssignmentTable = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 
-newGame();
+hideAllImgs();
+generatePairs();
 
 function flip(tileID) { //onclick of tiles calls this function, with it's own id (for example: b4), that's stored in tileID
 
@@ -17,10 +18,6 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
     if (flippedCounter == 1) {
         showImg(tileID);
         firstTileID = newTileID; //if this is the first tile clicked, store it as the one to compare to
-
-        console.log("first click");
-        console.log("first:" + firstTileID);
-        console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
     }
 
     if (flippedCounter == 2 && firstTileID != newTileID) {
@@ -32,10 +29,6 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
         }
 
         setTimeout(hideAllImgs, 500);
-
-        console.log("second click");
-        console.log("first:" + firstTileID);
-        console.log("current:" + newTileID); //? I think this was for debugging but I'll leave them in here
     }
     if (flippedCounter == 2 && firstTileID == newTileID) {
         flippedCounter = 1;
@@ -51,7 +44,6 @@ function hideAllImgs() {
     for (var i = 0; i < 16; i++) {
         try {
             document.getElementById('b' + i).style.backgroundColor = "#443737";
-            // document.getElementById('b' + i).setAttribute("style", "background-image:url(''); rotate3d(0, 1, 0, 180deg");
             document.getElementById('b' + i).setAttribute("style", "transform: rotate3d(0, 1, 0, 180deg;)");
             document.getElementById('b' + i).style.backgroundImage = "";
         } catch (e) {
@@ -64,7 +56,6 @@ function hideAllImgs() {
 
 function checkStatus(tileID, counter) {
     if (newTileID == firstTileID) {
-        //console.log("clicked the same tile twice. this...does nothing.");
         return true;
     }
 }
@@ -80,7 +71,6 @@ function hideTile(tileID) {
         var element = document.getElementById(tileID);
         var hiddenPlaceholder = document.createElement("div");
         hiddenPlaceholder.className = "hiddenBox";
-        //    hiddenPlaceholder.setAttribute("style", "")
         element.parentNode.replaceChild(hiddenPlaceholder, element);
     }, 650)
 
@@ -93,14 +83,12 @@ function generatePairs() {
 
     for (var i = 0; i < tileIdTable.length; i++) {
         tileIdTable[i] = 'b' + i;
-        console.log(tileIdTable[i]);
     }
 
     shuffle(tileIdTable);
 
     do {
         tableIndexHelper++;
-
         pictureAssignmentTable[tableIndexHelper - 1] = pictureTitles[assignmentIndexHelper];
         tableIndexHelper++;
         pictureAssignmentTable[tableIndexHelper - 1] = pictureTitles[assignmentIndexHelper];
@@ -108,13 +96,6 @@ function generatePairs() {
         assignmentIndexHelper++;
     }
     while (tableIndexHelper < 16);
-
-
-
-    console.log("---------------------");
-    for (var i = 0; i < 16; i++) {
-        console.log(tileIdTable[i] + " = " + pictureAssignmentTable[i]);
-    }
 
 }
 
@@ -151,7 +132,6 @@ function hideTesting() {
     var element = document.getElementById('b1');
     var hiddenPlaceholder = document.createElement("div");
     hiddenPlaceholder.className = "hiddenBox";
-    //    hiddenPlaceholder.setAttribute("style", "")
     element.parentNode.replaceChild(hiddenPlaceholder, element);
 }
 
@@ -166,6 +146,5 @@ function matchChecker(id1, id2) {
 
 function getBackgorundImgTitle(tileID) {
     const index = tileID.split('b').pop();
-    console.log("HI" + pictureAssignmentTable[tileIdTable[index].split('b').pop()]);
     return pictureAssignmentTable[tileIdTable[index].split('b').pop()];
 }
