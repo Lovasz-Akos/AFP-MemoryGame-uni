@@ -1,43 +1,48 @@
 body {
-    overflow-x: hidden;
-    text-align: center;
-    background-color: #272121;
-    margin-top: 2%;
-    margin-bottom: 3%;
+  width: 100vw;
+  height: 85vh;
+  overflow: hidden;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 4%;
+  margin-bottom: 5%;
 }
-
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 button {
+  height: 80px;
     margin: 0 auto;
     display: block;
     width: 200px;
     outline: 0;
-    border: 2px solid #443737;
-    font-size: 120%;
+    font-size: 140%;
     -webkit-appearance: none;
+    border: 2px solid #29323c;
     background: none;
     text-align: center;
     background-color: transparent;
-    /*background-color: #443737;*/
     border-radius: 5px;
     padding: 15px;
-    margin-bottom: 1%;
-    color: #ccbaba;
+    margin-top: -15%;
     font-family: 'aquireregular';
+    color: #ffffff;
     transition: 0.5s ease;
 }
 
 button:hover {
     transition: 0.5s ease;
-    background-color: #443737;
-    box-shadow: 0 0px 10px #ccbaba;
-    text-shadow: 0 0px 5px #ccbaba;
+    background-color: #29323c;
+    box-shadow: 0 0px 15px #ffffff;
+    text-shadow: 0 0px 5px #ffffff;
 }
 
 .wrapper {
+  width: 100%;
+  height: 100%;
     justify-content: center;
     margin: auto;
     display: grid;
@@ -48,7 +53,7 @@ button:hover {
 .box {
     height: 175px;
     text-align: center;
-    background-color: #443737;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     border-radius: 10px;
     color: #ccbaba;
     transition: 0.5s ease;
@@ -59,8 +64,8 @@ button:hover {
 .box:hover {
     border-radius: 10px;
     transition: 0.5s ease;
-    background-color: #463939;
-    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, .3), 0 0px 15px #ccbaba;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, .3), 0 0px 15px #ffffff;
 }
 
 .hiddenBox {
@@ -79,8 +84,15 @@ button:hover {
     margin-top: 15%;
     font-family: 'aquireregular';
     font-size: 120px;
-    color: #6ee069;
-    text-shadow: 0 0px 15px #42ba3d;
+    color: #ffffff;
+    text-shadow: #FFF 0px 0px 5px,
+                 #FFF 0px 0px 10px,
+                 #FFF 0px 0px 15px,
+                 #FF2D95 0px 0px 20px,
+                 #FF2D95 0px 0px 30px,
+                 #FF2D95 0px 0px 40px,
+                 #FF2D95 0px 0px 50px,
+                 #FF2D95 0px 0px 75px;
     transition: 0.5s ease;
 }
 

@@ -167,15 +167,12 @@ function showEndScreen() {
         var wrap = document.getElementById('wrapper');
         var btn = document.createElement("BUTTON");
         var win = document.createElement("div");
-        var placeholder = document.createElement("div");
 
         wrap.innerHTML = '';
         win.innerText = ("You Win!");
         win.className = ("win-state");
         wrap.style = "grid-template-columns: 1000px;";
         wrap.appendChild(win);
-
-        wrap.appendChild(placeholder);
 
         btn.innerHTML = "NEW GAME";
         btn.id = "newgameBTN";
