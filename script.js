@@ -43,8 +43,7 @@ function flip(tileID) { //onclick of tiles calls this function, with it's own id
 }
 
 function showImg(tileID) {
-    const i = tileID.split('b').pop();
-    document.getElementById(tileID).setAttribute("style", "transform: rotate3d(0, 1, 0, -180deg); background-image:url('images/" + pictureAssignmentTable[i] + ".png');");
+    document.getElementById(tileID).setAttribute("style", "transform: rotate3d(0, 1, 0, -180deg); background-image:url('images/" + getBackgorundImgTitle(tileID) + ".png');");
 }
 
 
@@ -97,6 +96,8 @@ function generatePairs() {
         console.log(tileIdTable[i]);
     }
 
+    shuffle(tileIdTable);
+
     do {
         tableIndexHelper++;
 
@@ -108,10 +109,7 @@ function generatePairs() {
     }
     while (tableIndexHelper < 16);
 
-    shuffle(tileIdTable);
-    tileIdTable.forEach(element => {
-        console.log(element);
-    });
+
 
     console.log("---------------------");
     for (var i = 0; i < 16; i++) {
@@ -158,16 +156,16 @@ function hideTesting() {
 }
 
 function matchChecker(id1, id2) {
-    const index1 = id1.split('b').pop();
-    const index2 = id2.split('b').pop();
 
-    console.log("----------");
-    console.log(index1);
-    console.log(index2);
-
-    if (pictureAssignmentTable[index1] == pictureAssignmentTable[index2]) { //match
+    if (getBackgorundImgTitle(id1) == getBackgorundImgTitle(id2)) { //match
         return true;
     } else { //not match
         return false;
     }
+}
+
+function getBackgorundImgTitle(tileID) {
+    const index = tileID.split('b').pop();
+    console.log("HI" + pictureAssignmentTable[tileIdTable[index].split('b').pop()]);
+    return pictureAssignmentTable[tileIdTable[index].split('b').pop()];
 }
