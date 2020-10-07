@@ -176,7 +176,7 @@ function showEndScreen() {
 
         wrap.appendChild(placeholder);
 
-        btn.innerHTML = "New Game";
+        btn.innerHTML = "NEW GAME";
         btn.id = "newgameBTN";
         btn.className = ("button");
         btn.onclick = function() { newGame(); };
