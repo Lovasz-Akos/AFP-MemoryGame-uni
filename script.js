@@ -1,6 +1,7 @@
 var flippedCounter = 0;
 var newTileID = "";
 var firstTileID = "";
+var tileNumber = 16;
 
 var matches = 0;
 
@@ -43,7 +44,7 @@ function showImg(tileID) {
 
 
 function hideAllImgs() {
-    for (var i = 0; i < 16; i++) {
+    for (var i = 0; i < tileNumber; i++) {
         try {
             document.getElementById('b' + i).style.backgroundColor = "#443737";
             document.getElementById('b' + i).setAttribute("style", "transform: rotate3d(0, 1, 0, 180deg;)");
@@ -102,7 +103,7 @@ function generatePairs() {
 
         assignmentIndexHelper++;
     }
-    while (tableIndexHelper < 16);
+    while (tableIndexHelper < tileNumber);
 
 }
 
@@ -130,7 +131,7 @@ function shuffle(array) {
 function recoverTiles() {
     const wrapper = document.getElementById("wrapper");
     wrapper.innerHTML = '';
-    for (var i = 0; i < 16; i++) {
+    for (var i = 0; i < tileNumber; i++) {
         wrapper.innerHTML += "<div class=box id=b" + i + " onclick=flip('b" + i + "')></div>"
     }
 }
