@@ -63,6 +63,7 @@ function checkStatus(tileID, counter) {
 }
 
 function newGame() {
+    document.getElementById('wrapper').style = "grid-template-columns: 175px 175px 175px 175px;";
     matches = 0;
     recoverTiles();
     hideAllImgs();
@@ -157,5 +158,14 @@ function getBackgorundImgTitle(tileID) {
 }
 
 function showEndScreen() {
-
+    setTimeout(function() {
+var wrap = document.getElementById('wrapper');
+    wrap.innerHTML = '';
+    var win = document.createElement("div");
+    win.innerText = ("You Win!");
+    win.className = ("win-state");
+    wrap.style = "grid-template-columns: 1000px;";
+    wrap.appendChild(win);
+        }, 650)
+    
 }
