@@ -9,3 +9,4 @@ Not matching tiles are selected                 Both tiles flip back to hidden s
 Matching tiles are selected                     Both tiles vanish                               Both tiles have vanished                No issues found
 New game button clicked                         16 new tiles generate with new pictures         New tiles were generated                No issues found
 Switched browser to windowed mode               Tiles scale according to the window size        Tiles did not scale                     Design not responsive
+Refreshed page                                  Tiles reset with new pattern generated          New pattern generated, tiles reset      No issues found
