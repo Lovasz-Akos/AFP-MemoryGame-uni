@@ -1,25 +1,26 @@
 body {
-  width: 100vw;
-  height: 85vh;
-  overflow: hidden;
-  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 4%;
-  margin-bottom: 5%;
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
 }
+
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 button {
-  height: 80px;
+    height: 80px;
     margin: 0 auto;
     display: block;
     width: 200px;
     outline: 0;
-    font-size: 140%;
+    font-size: 180%;
     -webkit-appearance: none;
     border: 2px solid #29323c;
     background: none;
@@ -41,8 +42,8 @@ button:hover {
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     margin: auto;
     display: grid;
@@ -64,7 +65,7 @@ button:hover {
 .box:hover {
     border-radius: 10px;
     transition: 0.5s ease;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     box-shadow: inset 0px 0px 10px rgba(255, 255, 255, .3), 0 0px 15px #ffffff;
 }
 
@@ -85,14 +86,7 @@ button:hover {
     font-family: 'aquireregular';
     font-size: 120px;
     color: #ffffff;
-    text-shadow: #FFF 0px 0px 5px,
-                 #FFF 0px 0px 10px,
-                 #FFF 0px 0px 15px,
-                 #FF2D95 0px 0px 20px,
-                 #FF2D95 0px 0px 30px,
-                 #FF2D95 0px 0px 40px,
-                 #FF2D95 0px 0px 50px,
-                 #FF2D95 0px 0px 75px;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
     transition: 0.5s ease;
 }
 
