@@ -1,0 +1,11 @@
+Tester: Krigovszki Bálint
+Date: 2020-10-08
+Web browser: Google Chrome
+
+Action performed                                Expected outcome                                Outcome                                 Issues
+
+Clicked the same tile twice                     The tile doesn't flip back to hidden state      The tile didn't flip back               No issues found
+Not matching tiles are selected                 Both tiles flip back to hidden state            Both tiles flipped back to hidden       No issues found
+Matching tiles are selected                     Both tiles vanish                               Both tiles have vanished                No issues found
+New game button clicked                         16 new tiles generate with new pictures         New tiles were generated                No issues found
+Switched browser to windowed mode               Tiles scale according to the window size        Tiles did not scale                     Design not responsive
