@@ -1,0 +1,11 @@
+Performed action                    |   Expected outcome                                                |   Actual outcome
+
+Click a tile                            Tile flips, a picture shows that's assigned to that tile            Pictures are not randomised correctly, fixed after 2 iterations
+Click the same tile twice               Tile doesn't react, doesn't flip back to hidden state.              Tile flips back to hidden state, fixed after 3 iterations
+Click a different tile from first       Second tile flips, shows it's assigned picture.                     Pictures are not randomised correctly, fixed after 2 iterations
+Pictures on tiles don't match           Tiles flip back to the hidden state.                                Outcome as expected
+Pictures on tiles match                 Tiles get removed from the game table                               Outcome as expected
+All the tiles have been removed         A "You win" text is shown on screen with a new game button          Text wrapping problems, corrected after 2 iterations
+Click the "New game" button             All the tiles re-appear, the pictures are re-shuffled               Outcome as expected
+Refresh the whole page                  The game resets to it's start state, same as "New game" butoon      Pictures don't get assigned, corrected after 1 iteration
+Try in multiple browsers                The game works as intended on all browsers                          Works in all browsers except in the legacy version of iexplorer
