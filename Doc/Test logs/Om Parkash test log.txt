@@ -1,0 +1,9 @@
+
+Action performed                                Expected outcome                                Outcome                                                Issues
+
+Click  the two tiles one bye one                   nothing happen                                    nothing happpen                                        no issue found
+ Clicked the same tile twice                   after clicking  both tiles truns into pictures        Both tiles flip back to hidden state                   no issue found
+Pictures on tiles match                      Tiles get removed from the game table                   Tiles get removed from the game table                  no issue found
+pictures on tiles do not match                both tile get hidden on the table                      both tile get hidden on the table                      no issue found
+New game button clicked                         All the tiles appears again with new position        New tiles were appeared with new position              no issue found
+Refresh the  page                           it will work as  same as new "game button "              new game come wth same pictures but with new position  no issue found                 
