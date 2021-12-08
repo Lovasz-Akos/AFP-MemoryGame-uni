@@ -56,13 +56,6 @@ function hideAllImgs() {
     flippedCounter = 0;
 }
 
-
-function checkStatus(tileID, counter) {
-    if (newTileID == firstTileID) {
-        return true;
-    }
-}
-
 function newGame() {
     document.getElementById('wrapper').style = "grid-template-columns: 175px 175px 175px 175px;";
     document.getElementById('newgameBTN').remove();
